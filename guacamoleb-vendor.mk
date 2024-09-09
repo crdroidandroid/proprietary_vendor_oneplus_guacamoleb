@@ -138,9 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
-    vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.sensor.gc5035.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.gc5035.so \
-    vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.sensor.imx471.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx471.so \
-    vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.sensor.imx586.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx586.so \
     vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.sensormodule.gcoreinc_gc5035.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.gcoreinc_gc5035.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.semco_imx586.bin \
     vendor/oneplus/guacamoleb/proprietary/odm/lib64/camera/com.qti.sensormodule.sunny_imx471.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.sunny_imx471.bin \
@@ -499,5 +496,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamoleb/proprietary/vendor/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Harping_RTP.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/shuntai24k_rtp.bin \
     vendor/oneplus/guacamoleb/proprietary/vendor/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/t-jingle_RTP.bin \
-    vendor/oneplus/guacamoleb/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin \
-    vendor/oneplus/guacamoleb/proprietary/vendor/lib/hw/audio.primary.msmnile.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msmnile.so
+    vendor/oneplus/guacamoleb/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin
+
+PRODUCT_PACKAGES += \
+    audio.primary.msmnile \
+    com.qti.sensor.gc5035 \
+    com.qti.sensor.imx471 \
+    com.qti.sensor.imx586
